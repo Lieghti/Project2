@@ -2,3 +2,7 @@
 h1 {
   font-family: cursive;
 }
+
+.winter, .spring, .summer {
+  display: none;
+}

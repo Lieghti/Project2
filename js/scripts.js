@@ -7,11 +7,11 @@ $(document).ready(function() {
     var season = $("select.season").val();
     var hairType = $("select.hair-type").val();
 
-  if { ageRange === value 1 or && climate === value 1 or value 2
-
-  }
-    $(".age-range").empty().append(quote);
-    $("#quote").show();
+  if (ageRange === "Less than 20 years old" or "20-40 years-old" && climate === "Extreme Heat!" && shoe-type === "Flip Flops" or "Light Sneakers") {
+      $(".winter").hide();
+      $(".spring").hide();
+      $(".summer").show ();
+    }
 
   });
 });
