@@ -9,7 +9,7 @@ $(document).ready(function() {
     var ageRangeInput = parseInt($("#age-range").val());
     var climateInput = $("#climate").val();
     var shoeTypeInput = $("#shoe-type").val();
-    // var seasonInput = $("#season").val();
+    var seasonInput = $("#season").val();
     // var hairTypeInput = $("#hair-type").val();
 
     // Age Range condiditonal statements
@@ -42,7 +42,18 @@ $(document).ready(function() {
     } else if (shoeTypeInput === 3) {
       moderate += 1;
     } else if (shoeTypeInput === 4){
-      cold += 1; 
+      cold += 1;
+    }
+
+    //seasonInput conditional statements
+    if (seasonInput === 1){
+      moderate += 1;
+    } else if (seasonInput === 2) {
+      hot += 1;
+    } else if (seasonInput === 3){
+      moderate += 1;
+    } else if (seasonInput === 4){
+      cold += 1;
     }
 
     //top scores
