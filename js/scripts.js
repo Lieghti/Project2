@@ -7,15 +7,31 @@ $(document).ready(function() {
     //debugger;
     console.log(hot);
     var ageRangeInput = parseInt($("#age-range").val());
-    // var climateInput = $("#climate").val();
+    var climateInput = $("#climate").val();
     // var shoeTypeInput = $("#shoe-type").val();
     // var seasonInput = $("#season").val();
     // var hairTypeInput = $("#hair-type").val();
 
+    // Age Range condiditonal statements
     if (ageRangeInput === 1) {
       hot += 1;
     } else if (ageRangeInput === 2) {
       moderate += 1;
+    } else if (ageRangeInput === 3){
+      moderate += 1;
+    } else if (ageRangeInput === 4){
+      hot += 1;
+    }
+
+    //Climate conditional statements
+    if (climateInput === 1){
+      hot += 1;
+    } else if (climateInput === 2){
+      moderate += 1;
+    } else if (climateInput === 3) {
+      cold += 1;
+    } else if (climateInput === 4) {
+      cold += 1;
     }
 
     //top scores
