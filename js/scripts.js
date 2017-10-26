@@ -3,6 +3,7 @@ var moderate = 0;
 var hot = 0;
 
 $(document).ready(function() {
+
   $("#survey").submit(function(event) {
     //debugger;
     console.log(hot);
@@ -67,22 +68,32 @@ $(document).ready(function() {
       hot += 1;
     }
 
-    //top scores
+    // Which options to show
+
+    if (hot > moderate){
+      ("#cold").hide();
+      ("#moderate").hide();
+      ("#hot").show();
+    } else if (hot > cold){
+      ("#cold").hide();
+      ("#moderate").hide();
+      ("#hot").show();
+     } 
+    // else if (moderate > hot) {
+    //   ("#moderate").show();
+    // } else if (moderate > cold) {
+    //   ("#moderate").show();
+    // } else if (cold > hot) {
+    //   ("#cold").show();
+    // } else if (cold > moderate) {
+    //   ("#cold").show();
+    // }
+
+       //top scores
     console.log(hot);
     console.log(moderate);
     console.log(cold);
 
-  /*if (ageRangeInput === "Less than 20 years old" && climateInput === "Extreme Heat!" && shoeTypeInput === "Flip Flops" && seasonInput === "Spring" && hairTypeInput === "Bone Straight") {
-      $(".cold").hide();
-      $(".moderate").hide();
-      $(".hot").show ();
-    }
-    else {
-      $(".cold").hide();
-      $(".moderate").hide();
-      $(".hot").show ();
-
-    }*/
 
     event.preventDefault();
   });
