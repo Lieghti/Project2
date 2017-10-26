@@ -5,13 +5,13 @@ var hot = 0;
 $(document).ready(function() {
 
   $("#survey").submit(function(event) {
-    //debugger;
+  //debugger;
     console.log(hot);
     var ageRangeInput = parseInt($("#age-range").val());
-    var climateInput = $("#climate").val();
-    var shoeTypeInput = $("#shoe-type").val();
-    var seasonInput = $("#season").val();
-    var hairTypeInput = $("#hair-type").val();
+    var climateInput = parseInt($("#climate").val());
+    var shoeTypeInput = parseInt($("#shoe-type").val());
+    var seasonInput = parseInt($("#season").val());
+    var hairTypeInput = parseInt($("#hair-type").val());
 
     // Age Range condiditonal statements
     if (ageRangeInput === 1) {
@@ -26,7 +26,7 @@ $(document).ready(function() {
 
     //Climate conditional statements
     if (climateInput === 1){
-      hot += 1;
+      hot += 5;
     } else if (climateInput === 2){
       moderate += 1;
     } else if (climateInput === 3) {
@@ -36,7 +36,7 @@ $(document).ready(function() {
     }
 
     // shoe-type conditional statements
-    if (shoeTypeInput === 1){
+    if (shoeTypeInput === 5){
       hot += 1;
     } else if (shoeTypeInput === 2) {
       moderate += 1;
@@ -71,23 +71,23 @@ $(document).ready(function() {
     // Which options to show
 
     if (hot > moderate){
-      ("#cold").hide();
-      ("#moderate").hide();
-      ("#hot").show();
+      $("#cold").hide();
+      $("#moderate").hide();
+      $("#hot").show();
     } else if (hot > cold){
-      ("#cold").hide();
-      ("#moderate").hide();
-      ("#hot").show();
-     } 
-    // else if (moderate > hot) {
-    //   ("#moderate").show();
-    // } else if (moderate > cold) {
-    //   ("#moderate").show();
-    // } else if (cold > hot) {
-    //   ("#cold").show();
-    // } else if (cold > moderate) {
-    //   ("#cold").show();
-    // }
+      $("#cold").hide();
+      $("#moderate").hide();
+      $("#hot").show();
+    }
+    else if (moderate > hot) {
+      ("#moderate").show();
+    } else if (moderate > cold) {
+      ("#moderate").show();
+    } else if (cold > hot) {
+      ("#cold").show();
+    } else if (cold > moderate) {
+      ("#cold").show();
+    }
 
        //top scores
     console.log(hot);
