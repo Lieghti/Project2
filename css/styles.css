@@ -2,6 +2,6 @@ h1 {
   font-family: cursive;
 }
 
-.winter, .spring, .summer {
+.cold, .moderate, .hot {
   display: none;
 }
