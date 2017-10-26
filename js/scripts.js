@@ -26,7 +26,7 @@ $(document).ready(function() {
 
     //Climate conditional statements
     if (climateInput === 1){
-      hot += 5;
+      hot += 1;
     } else if (climateInput === 2){
       moderate += 1;
     } else if (climateInput === 3) {
@@ -36,7 +36,7 @@ $(document).ready(function() {
     }
 
     // shoe-type conditional statements
-    if (shoeTypeInput === 5){
+    if (shoeTypeInput === 1){
       hot += 1;
     } else if (shoeTypeInput === 2) {
       moderate += 1;
@@ -73,20 +73,27 @@ $(document).ready(function() {
     if (hot > moderate){
       $("#cold").hide();
       $("#moderate").hide();
-      $("#hot").show();
+      $("#hot").fadeIn();
     } else if (hot > cold){
       $("#cold").hide();
       $("#moderate").hide();
-      $("#hot").show();
-    }
-    else if (moderate > hot) {
-      ("#moderate").show();
+      $("#hot").fadeIn();
+    } else if (moderate > hot) {
+      $("#cold").hide();
+      $("#hot").hide();
+      $("#moderate").slideDown();
     } else if (moderate > cold) {
-      ("#moderate").show();
+      $("#cold").hide();
+      $("#hot").hide();
+      $("#moderate").slideDown();
     } else if (cold > hot) {
-      ("#cold").show();
+      $("#hot").hide();
+      $("#moderate").hide();
+      $("#cold").show();
     } else if (cold > moderate) {
-      ("#cold").show();
+      $("#hot").hide();
+      $("#moderate").hide();
+      $("#cold").show();
     }
 
        //top scores
