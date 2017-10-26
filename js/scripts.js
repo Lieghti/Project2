@@ -1,18 +1,26 @@
 $(document).ready(function() {
   $("form.survey").submit(function(event) {
-    event.preventDefault();
-    var ageRange = $("select.age-range").val();
-    var climate = $("select.climate").val();
-    var shoeType = $("select.shoe-type").val();
-    var season = $("select.season").val();
-    var hairType = $("select.hair-type").val();
+    var ageRangeInput = $("form#age-range").val();
+    var climateInput = $("form#climate").val();
+    var shoeTypeInput = $("form#shoe-type").val();
+    var seasonInput = $("form#season").val();
+    var hairTypeInput = $("form#hair-type").val();
 
-  if (ageRange === "Less than 20 years old" or "20-40 years-old" && climate === "Extreme Heat!" && shoe-type === "Flip Flops" or "Light Sneakers") {
+
+
+  if (ageRangeInput === "Less than 20 years old" && climateInput === "Extreme Heat!" && shoeTypeInput === "Flip Flops" && seasonInput === "Spring" && hairTypeInput === "Bone Straight") {
       $(".winter").hide();
       $(".spring").hide();
       $(".summer").show ();
     }
+    else {
+      $(".winter").hide();
+      $(".spring").hide();
+      $(".summer").show ();
 
+    }
+
+    event.preventDefault();
   });
 });
 
