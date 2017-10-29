@@ -11,101 +11,97 @@
 <body>
   <div class="jumbotron">
 
-  <div class="container">
-    <h1>Vacation Survey</h1>
-    <p>Do you have extra money? Are you confused on where you should go on your next vacation? Worry no more! Take this quick and simple survey to find out where you should go!</p>
+    <div class="container">
+      <h1>Vacation Survey</h1>
+      <p>Do you have extra money? Are you confused on where you should go on your next vacation? Worry no more! Take this quick and simple survey to find out where you should go!</p>
+    </div>
   </div>
-</div>
 
   <!--The Form -->
-    <form id="survey">
+  <form id="survey">
+    <div>
+
+      <!--Age Range -->
       <div>
 
-        <!--Age Range -->
-        <div>
-
-          <h3>Select your age range:</h3>
-          <select class="form-control" id="age-range">
-            <option value="1">Less than 20 years old</option>
-            <option value="2">20-40 years-old</option>
-            <option value="3">40 to 60 years-old</option>
-            <option value="4">60 year and beyond</option>
-          </select>
-        </div>
-        <br>
-        <!--Climate Preference -->
-        <div>
-          <h3>Select your climate preferece:</h3>
-          <select class="form-control" id="climate">
-            <option value="1">Extreme Heat!</option>
-            <option value="2">Moderate Heat</option>
-            <option value="3">Moderate Cold</option>
-            <option value="4">Extreme Cold!</option>
-          </select>
-        </div>
-        <br>
-        <!--Favorte shoe type -->
-        <div>
-          <h3>Select your favorite kind of shoe:</h3>
-          <select class="form-control" id="shoe-type">
-            <option value="1">Flip Flops</option>
-            <option value="2">Light Sneakers</option>
-            <option value="3">Good Sturdy Boot</option>
-            <option value="4">Moon Shoes</option>
-          </select>
-        </div>
-        <br>
-        <!--Which season will the user be travelling -->
-        <h3>Select the time of year you'll be travelling:</h3>
-        <div>
-          <select class="form-control" id="season">
-            <option value="1">Spring</option>
-            <option value="2">Summer</option>
-            <option value="3">Fall</option>
-            <option value="4">Winter</option>
-          </select>
-        </div>
-        <br>
-        <!--Hair type -->
-        <h3>Select the type of hair you have:</h3>
-        <div>
-
-          <select class="form-control" id="hair-type">
-            <option value="1">Bone Straight</option>
-            <option value="2">Wavy</option>
-            <option value="3">Curly</option>
-            <option value="4">Kinky Curly</option>
-          </select>
-        </div>
-      </form>
+        <h3>Select your age range:</h3>
+        <select class="form-control" id="age-range">
+          <option value="1">Less than 20 years old</option>
+          <option value="2">20-40 years-old</option>
+          <option value="3">40 to 60 years-old</option>
+          <option value="4">60 year and beyond</option>
+        </select>
+      </div>
       <br>
-      <button type="submit" class="btn">submit</button>
+      <!--Climate Preference -->
+      <div>
+        <h3>Select your climate preferece:</h3>
+        <select class="form-control" id="climate">
+          <option value="1">Extreme Heat!</option>
+          <option value="2">Moderate Heat</option>
+          <option value="3">Moderate Cold</option>
+          <option value="4">Extreme Cold!</option>
+        </select>
+      </div>
+      <br>
+      <!--Favorte shoe type -->
+      <div>
+        <h3>Select your favorite kind of shoe:</h3>
+        <select class="form-control" id="shoe-type">
+          <option value="1">Flip Flops</option>
+          <option value="2">Light Sneakers</option>
+          <option value="3">Good Sturdy Boot</option>
+          <option value="4">Moon Shoes</option>
+        </select>
+      </div>
+      <br>
+      <!--Which season will the user be travelling -->
+      <h3>Select the time of year you'll be travelling:</h3>
+      <div>
+        <select class="form-control" id="season">
+          <option value="1">Spring</option>
+          <option value="2">Summer</option>
+          <option value="3">Fall</option>
+          <option value="4">Winter</option>
+        </select>
+      </div>
+      <br>
+      <!--Hair type -->
+      <h3>Select the type of hair you have:</h3>
+      <div>
+
+        <select class="form-control" id="hair-type">
+          <option value="1">Bone Straight</option>
+          <option value="2">Wavy</option>
+          <option value="3">Curly</option>
+          <option value="4">Kinky Curly</option>
+        </select>
+      </div>
+    </form>
+    <br>
+    <button type="submit" class="btn">submit</button>
+  </div>
+
+  <div class="results">
+
+    <!-- Destinations -->
+    <h2>You should go to:</h2>
+
+    <div id="cold">
+      <h2>Antarctica!</h2>
+      <img src="img/antarctica.jpg" alt="A photo of an iceberg">
     </div>
 
-    <div class="results">
-
-      <!-- Destinations -->
-      <h2>You should go to:</h2>
-
-      <div id="cold">
-        <h2>Antarctica!</h2>
-        <img src="img/antarctica.jpg" alt="A photo of an iceberg">
-      </div>
-
-      <div id="moderate">
-        <h2>The Forest!</h2>
-        <img src="img/forest.jpeg" alt="a photo of a forest">
-      </div>
-
-      <div id="hot">
-        <h2>The Mojave Desert!</h2>
-        <img src="img/mojave.jpg" alt="a photo of the Mojave desert">
-
-      </div>
-
-
-
+    <div id="moderate">
+      <h2>The Forest!</h2>
+      <img src="img/forest.jpeg" alt="a photo of a forest">
     </div>
-  </body>
+
+    <div id="hot">
+      <h2>The Mojave Desert!</h2>
+      <img src="img/mojave.jpg" alt="a photo of the Mojave desert">
+    </div>
+  </div>
+</body>
 </div>
 </html>

@@ -100,12 +100,7 @@ $(document).ready(function() {
     console.log(moderate);
     console.log(cold);
 
-
     event.preventDefault();
   });
 
 });
-});
-
-
-//$('select[name=selector]').change(function() { alert($(this).val()); });
