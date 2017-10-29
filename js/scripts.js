@@ -5,7 +5,6 @@ var hot = 0;
 $(document).ready(function() {
 
   $("#survey").submit(function(event) {
-  //debugger;
     console.log(hot);
     var ageRangeInput = parseInt($("#age-range").val());
     var climateInput = parseInt($("#climate").val());
@@ -104,6 +103,8 @@ $(document).ready(function() {
 
     event.preventDefault();
   });
+
+});
 });
 
 

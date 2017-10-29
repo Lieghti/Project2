@@ -1,7 +1,6 @@
 h1 {
   font-family: cursive;
   text-align: center;
-
 }
 
 #cold, #moderate, #hot {
@@ -10,4 +9,16 @@ h1 {
 
 body {
   margin: 20px
+}
+
+img {
+  width: 800px;
+  height: auto;
+}
+
+body {
+  background-color:#E4F3E6;
+}
+.jumbotron {
+  background-color:#C2C6C5
 }
